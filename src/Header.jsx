@@ -1,5 +1,6 @@
 import logo from "./assets/Logo.png"
 import Menu from "./ui/menu"
+import NavBar from "./ui/NavBar"
 function Header() {
     return (
         <div className="flex justify-between pb-4  sticky z-50">
@@ -8,7 +9,7 @@ function Header() {
                 <Menu />
             </div>
 
-            <div className="flex gap-4">
+            <div className=" gap-4 hidden lg:flex">
                 <button className="py-2 px-4 border-blue-700 border-2 text-customDark rounded-lg ">
                     Log in
                 </button>
@@ -16,6 +17,10 @@ function Header() {
                     Request demo
                 </button>
             </div>
+
+           <div className="flex lg:hidden">
+             <NavBar />
+           </div>
         </div>
     )
 }

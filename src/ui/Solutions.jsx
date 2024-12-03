@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const industries = [
     "Biopharmaceutical", "Industrial biotech", "Clinical research", "Biomanufacturers","Biorepositories","Contract services"
@@ -14,9 +15,12 @@ function Solutions(){
       {/* Dropdown Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="px-4 py-2  text-customDark rounded-md  transition-colors font-bold "
+        className="px-4 py-2  text-customDark rounded-md  transition-colors font-bold flex  gap-4"
       >
         Solutions
+        <div className="mt-2">
+          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        </div>
       </button>
 
       {/* Dropdown Menu */}

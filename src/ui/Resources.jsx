@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const compare = [
     "Excel vs Genemod", "LabAchives vs Genemod", "Quartzy vs Genemod", "FreezerPro vs Genemod"
@@ -14,9 +15,12 @@ function Resources(){
       {/* Dropdown Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="px-4 py-2  text-customDark rounded-md font-bold transition-colors"
+        className="px-4 py-2  text-customDark rounded-md font-bold transition-colors flex gap-4 "
       >
         Resources
+        <div className="mt-2">
+          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        </div>
       </button>
 
       {/* Dropdown Menu */}
