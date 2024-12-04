@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import streamline from "../assets/layout1.png";
 
 function Streamline() {
@@ -18,9 +19,9 @@ function Streamline() {
                     <button className="p-3 text-white bg-customBluee font-bold rounded-lg w-full md:w-auto">
                         Request demo
                     </button>
-                    <button className="py-2 px-4 md:px-8 text-customBluee border-customBluee border-2 font-bold rounded-lg w-full md:w-auto">
+                    <Link to='/signup' className="py-2 px-4 md:px-8 text-customBluee border-customBluee border-2 font-bold rounded-lg w-full md:w-auto">
                         Sign up free
-                    </button>
+                    </Link>
                 </div>
             </div>
 
