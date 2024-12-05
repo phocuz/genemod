@@ -88,13 +88,13 @@ function Footer() {
             </div>
 
             {/* Footer Bottom Section */}
-            <div className="container mx-auto flex flex-col  sm:flex-row justify-between items-center mt-10 px-6">
+            <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-10 px-6">
                 <img
                     src={logo}
                     alt="Genemod Logo"
                     className="w-32 mb-4 sm:mb-0"
                 />
-                <div className="text-center sm:text-right flex flex-col sm:flex-row  gap-4">
+                <div className="text-center sm:text-right flex gap-4">
                     <p className="text-sm">© 2024 Genemod, Inc.</p>
                     <p className="text-sm hover:underline cursor-pointer">Privacy Policy</p>
                     <p className="text-sm hover:underline cursor-pointer">Terms of Service</p>
