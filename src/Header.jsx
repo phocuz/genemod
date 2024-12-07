@@ -4,7 +4,7 @@ import Menu from "./ui/menu"
 import NavBar from "./ui/NavBar"
 function Header() {
     return (
-        <div className="flex justify-between bg-white top-0 h-[100px]  p-4 z-50 ">
+        <div className="flex justify-between bg-white top-0   p-4 z-50 ">
             <div className="flex gap-4">
                 <img src={logo} alt="logo" className="w-[142px] h-[40px]" />
                 <Menu />

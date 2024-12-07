@@ -16,7 +16,7 @@ function NavBar() {
             <button onClick={handleToggleIsOpen}>{isOpen ? (<img src={btnClose} alt="open-btn" />):(<img src={btnOpen} alt="close-btn" />)} </button>
             
         {isOpen && (
-                    <div className="absolute top-full right-0 w-[350px] sm:w-[450px] md:w-[850px]  h-auto bg-white  lg:hidden z-50 ">
+                    <div className="absolute top-full right-0 flex-shrink w-[350px] sm:w-[450px] md:w-[700px]  h-auto bg-white  lg:hidden z-50 ">
                         <ul className="p-6 space-y-6 text-lg font-medium">
                             <li className="cursor-pointer">
                                 <MobileProducts />
@@ -36,8 +36,8 @@ function NavBar() {
                         </ul>
 
                         <div className="flex justify-center flex-col gap-4 mb-20">
-                            <button className="w-full p-4 border-customBluee border-2 text-customBluee text-[20px] font-bold">Login</button>
-                        <button className="w-full p-4 border-customBluee border-2 bg-customBluee text-white text-[20px]">Request Demo</button>
+                            <button className="w-[80%] mx-auto p-4 border-customBluee border-2 text-customBluee text-[20px] font-bold">Login</button>
+                        <button className="w-[80%] p-4 border-customBluee border-2 bg-customBluee mx-auto text-white text-[20px]">Request Demo</button>
                         </div>
                     </div>
                 )}
